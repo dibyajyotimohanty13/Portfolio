@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    margin: 0 20px;
+  }
+  .navbar .menu i{
+    color: white;
+    font-size: 25px;
+    margin: 0 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+}
+.navbar ul li a:hover{
+    background: rgb(132, 215, 132);
+    color: black;
+    border-radius: 5px;
+}
+#click{
+    visibility: hidden;
+}
+
+  @media  (max-width:940px){
+    .navbar ul{
+        position: fixed;
+        top:80px;
+        left: 100%;
+        background: #111;
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+    }
+    
+    #click:checked ~ ul{
+        left: 0;
+    }
+    #click:checked ~ .menu i:before{
+        content: "\f00d";
+    }
+    .navbar ul li{
+        margin: 40px 0;
+    }
+    .navbar .menu i{
+        display: block;
+    }
+  }
