@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/01b714b037.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="navbar">
-            <div class="logo"><a href="index.html">DIBYAJYOTI</a></div>
+            <div class="logo"><a href="index.html">-:DIBYAJYOTI:-</a></div>
             <input type="checkbox" id="click">
             <label for="click" class="menu">
                 <i class="fa-solid fa-bars"></i>
             </label>
             <ul class="section">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
+            <div class="theme"></div>
+        </div>
+        <img src="images/bgi2.webp" alt="" class="cover-img">
+        <div class="hmain">
+            <div class="text">
+                <h4>Hello I am</h4>
+                <h1 class="fname">Dibyajyoti</h1>
+                <h1 class="lname">Mohanty</h1>
+            </div>
+            <a href="resume/res.pdf" download="res.pdf"><button>Download Resume</button></a>
         </div>
     </div>
+    <div id="about">
+        <div class="abcont">
+            <img src="images/ablogo.jpg" alt=""><br><br>
+            <h2>I am</h2>
+            <h1> <b>DIBYAJYOTI MOHANTY</b></h1><br><br>
+            <h2>I am </h2>
+            <h1>A <span style="color: chartreuse;">Learner</span></h1><br>
+            <h1>An <span style="color: blueviolet;">Enthusiast</span></h1><br><br>
+            <p>I am a learner with problem solving skills, having keen interest to apply theoretical
+                knowledge to real world problems, dedicated to excel as a programmer and innovative developer with
+                continuous learning and professional growth. </p><br>
+            <p>I am constantly trying to learn new things in life may it be technical skills, non-technical skills or
+                extra-curricular activities.</p><br>
+            <p>My main motto is "<b><i>You can always be a better version of yourself. So never stop trying.</i></b>"
+            </p>
+        </div>
+    </div>
+    <div id="projects">
+        <h1>My Projects</h1><br>
+        <div class="contents">
+
+            <div class="p1">
+                <h2>Basic Portfolio Page</h2><br><br>
+                <p>This is a simple personal portfolio page where I have implemented all the basic skills about HTML,
+                    CSS and JavaScript that I have learnt.</p><br><br><br>
+                <p><a href="https://github.com/dibyajyotimohanty13/Portfoliocd " target="_blank">&lt;Get Codes&gt;</a></p>
+            </div>
+            <div class="p2">
+                <h2>Simple Calculator</h2><br><br>
+                <p>This is a simple basic calculator web app which performs all the basic arithmetic operations.</p><br><br><br>
+                <p><a href="https://github.com/dibyajyotimohanty13/Calculator" target="_blank">&lt;Get Codes&gt;</a></p>
+            </div>
+            <div class="p3">
+                <h2>Tic Tac Toe Game</h2><br><br>
+                <p>This is the simple yet fun game of Tic Tac Toe built using HTML, CSS and JavaScript</p><br><br><br>
+                <p><a href="https://github.com/dibyajyotimohanty13/Tic-Tac-Toe" target="_blank">&lt;Get Codes&gt;</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Contact Me</h1><br>
+        <form action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your thoughts"></textarea><br>
+            <input type="submit" id="submit" value="Send">
+        </form>
+        
+    </div>
+    <footer class="social">
+        <a href="https://www.instagram.com/dibyajyotimohanty13?igsh=ZWE3b21qcHQ2YzNj" target="_blank"><i class="fa-brands fa-instagram" style="color: #e675a6;"></i></a>
+        <a href="https://x.com/DiByAKaRnA?t=Zv2aSM08SS51wVrB9TOiAg&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/dibyajyoti-mohanty-5b8295263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0764ab;"></i></a>
+        <a href="https://github.com/dibyajyotimohanty13?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
