@@ -131,6 +131,7 @@ cursor: pointer;
     padding: 5px;
     margin: 50px;
     border-radius: 20px;
+    cursor: pointer;
   }
 
   .cover-img{
